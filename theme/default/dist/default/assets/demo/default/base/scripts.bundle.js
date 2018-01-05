@@ -3709,7 +3709,7 @@ jQuery.fn.extend({
         var defaultSort = dt.getDefaultSortColumn();
         datatable.API.params = $.extend({}, {
           pagination: {page: 1, perpage: API.getOption('data.pageSize')},
-          sort: {sort: defaultSort.sort, field: defaultSort.field},
+          sort: {sort: defaultSort.sort, field: defaultSort.field },
           query: {},
         }, datatable.API.params, dt.stateGet(dt.stateId));
 
